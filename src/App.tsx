@@ -68,6 +68,7 @@ function App() {
                 <Route path="/rooms/:uuid/edit" element={<EditRoom />} />
                 <Route path="/informations" element={<Informations />} />
                 <Route path="/settings" element={<Settings />} />
+                <Route path="/*" element={<Dashboard />} />
               </Routes>
             </div>
           </Router>
