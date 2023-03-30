@@ -1,0 +1,162 @@
+@import "../../../styles/variables.scss";
+
+.pageHead {
+  margin: 0 0 80px 0;
+  display: flex;
+  gap: 8px 32px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 960px;
+}
+
+.row {
+  gap: 24px;
+}
+
+.headRow {
+  column-gap: 40px;
+  flex: 1;
+}
+
+
+.actions {
+
+  display: flex;
+  gap: 8px;
+
+  svg {
+    width: 40px;
+    height: 40px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    fill: rgba(0, 0, 0, 0.25);
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.edit {
+  &:hover {
+    fill: $blue-400;
+  }
+}
+
+.delete {
+  &:hover {
+    fill: $red-600;
+  }
+}
+
+.topRow {
+  width: fit-content;
+  column-gap: 16px;
+  align-items: center;
+  h2 {
+    margin: 0 !important;
+  }
+}
+.categorySelector {
+  margin: 80px 0;
+}
+.data {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.dataSection {
+  gap: 16px;
+  min-height: fit-content;
+}
+
+.chartContainer {
+  height: fit-content;
+}
+
+.chart {
+  width: 100%;
+}
+
+.tracking {
+  width: 100%;
+  padding: 32px;
+  box-sizing: border-box;
+  max-width: 1024px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 16px 40px rgba($color: #000000, $alpha: $card-shadow-opacity);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  h2 {
+    margin: 0;
+  }
+}
+
+.dateSelector {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.day {
+  font-size: 1.25rem;
+}
+
+.previous {
+  width: 24px;
+  height: 24px;
+  transform: rotate(90deg);
+}
+.next {
+  width: 24px;
+  height: 24px;
+  transform: rotate(-90deg);
+}
+
+.color {
+  --color: #000;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: var(--color);
+}
+
+.intervalRow {
+  display: flex;
+  column-gap: 32px;
+}
+
+.intervalBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  width: 48px;
+  height: 48px;
+  background-color: $accent-400;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  path {
+    color: #fff;
+  }
+}
+
+.intervalBtn:hover {
+  background-color: $accent-300;
+  transition: all 0.2s ease;
+}

@@ -1,0 +1,56 @@
+@import "../../../../styles/variables.scss";
+
+
+.container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+  align-items: center;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, $card-shadow-opacity);
+  box-sizing: border-box;
+  border-radius: 16px 0 0 16px;
+  padding: 24px 40px 24px 8px;
+  transform: translateX(calc(327px - 72px));
+  transition: transform 1s cubic-bezier(0.83, 0, 0.17, 1);
+
+  h2 {
+    margin: 0;
+    font-size: 1.25rem;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.arrow {
+  width: 32px;
+  height: 32px;
+  transform: rotate(90deg);
+}
+.container:hover {
+  transform: translateX(40px);
+  transition: transform 1s cubic-bezier(0.83, 0, 0.17, 1);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.server {
+  margin: 0 24px 0 8px;
+}
+
+.arrow {
+  margin: 0 8px;
+}

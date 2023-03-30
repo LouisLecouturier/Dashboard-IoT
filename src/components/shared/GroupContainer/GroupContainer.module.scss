@@ -1,0 +1,79 @@
+@import "../../../styles/variables.scss";
+.container {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: fit-content;
+  padding: 24px 32px 32px 32px;
+  gap: 24px;
+  border-radius: 16px;
+  background: $grey-500;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  * {
+    text-decoration: none;
+  }
+}
+
+.name {
+  margin: 0;
+}
+
+.plusContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 289px;
+  height: 289px;
+}
+
+.plus:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+.plus {
+  cursor: pointer;
+  padding: 16px;
+  background-color: #fff;
+  stroke: rgba(0, 0, 0, 0.1);
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, $card-shadow-opacity);
+  transition: transform 0.2s ease;
+}
+
+.actions {
+  display: flex;
+  gap: 4px;
+  svg {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    fill: rgba(0, 0, 0, 0.24);
+
+    transition: all 0.2s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.edit {
+  &:hover {
+    fill: $blue-400;
+  }
+}
+
+.delete {
+  &:hover {
+    fill: $red-600;
+  }
+}

@@ -1,0 +1,29 @@
+
+
+.section {
+  width: clamp(320px, 100%, 800px);
+    font-weight: 500;
+  p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.4rem;
+  }
+
+  ul {
+    margin: 0;
+    list-style: none;
+    padding-left: 8px;
+    li {
+      margin: 0;
+      padding: 0;
+      line-height: 1.64rem;
+
+      &:before {
+        content: "-";
+        margin-right: 8px;
+      }
+
+
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.row {
+  column-gap: 16px;
+  row-gap: 16px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.column {
+  row-gap: 16px;
+}
+
+.formGroup {
+  width: clamp(320px, 100%, 496px) !important;
+}

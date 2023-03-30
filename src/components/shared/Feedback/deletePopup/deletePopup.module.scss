@@ -1,0 +1,17 @@
+@import "../../../../styles/variables";
+
+
+.container {
+  width: clamp(320px, 100%, 496px) ;
+
+}
+
+.textToWrite {
+  margin: 0;
+
+
+    font-style: italic;
+  font-weight: 500;
+  color: $red-400;
+
+}
